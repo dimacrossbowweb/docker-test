@@ -9,4 +9,4 @@ RUN npm i --omit=dev
 COPY src/ ./src/
 
 EXPOSE 3032
-CMD [ "node", "main.js" ] 
+CMD [ "node", "src/main.js" ] 
