@@ -6,6 +6,4 @@ COPY hello.sh ./
 
 RUN chmod +x hello.sh
 
-ENTRYPOINT []
-
 CMD ["sh", "hello.sh"]
