@@ -2,11 +2,11 @@ FROM node:16-alpine
 
 WORKDIR /home/ilovedocker/app
 
-COPY package*.json ./
+COPY packages/package*.json ./
 
 RUN npm i --omit=dev
 
-COPY . .
+COPY src/ ./src/
 
 EXPOSE 3032
 CMD [ "node", "main.js" ] 
